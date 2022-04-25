@@ -1,0 +1,59 @@
+# inacap
+Tareas_Semestre_1
+#EJERCICIO N°1 PYTHON
+#CALCULO PROMEDIo
+#INGRESO DE DATOS POR TECLADO
+
+#LIMPIAR PANTALLA
+from os import system;
+system("cls");
+
+
+#Declaracion de variables
+Rutt = '';
+Nomm = '';
+Asigg = '';
+Not1 = 0;
+Not2 = 0;
+Not3 = 0;
+Promm = 0;
+Situacion = "";
+
+#ingreso de datos
+print(""); #imprime una linea en blanco
+print("    INGRESO DE DATOS    "); 
+print("========================="); 
+
+Rutt = input("ingrese el rut del alumno..........: ");
+Nomm = input("ingrese el nombre del alumno.......: ");
+Asigg = input("ingrese asignatura................: ");
+Not1 = int(input("ingrese la nota 1..................: "));
+Not2 = int(input("ingrese la nota 2..................: "));
+Not3 = int(input("ingrese la nota 3..................: "));
+
+
+#calculo del promedio
+Promm = (Not1 + Not2 + Not3)/3;
+
+
+#calculo de la situracion
+if(Promm >= 10 and Promm <40):
+    Situacion = 'reprobado';
+if(Promm >= 40 and Promm <50):
+    Situacion = 'aprobado';
+if(Promm >= 50 and Promm <70):
+    Situacion = 'eximido';
+
+print(""); #imprime una linea en blanco
+print("    MUESTRA DE DATOS    "); 
+print("========================="); 
+print("el rut del alumno es...............:",Rutt);
+print("el nombre del alumno es............:",Nomm);
+print("la asignatura es...................:",Asigg);
+print("la nota 1 es.......................:",Not1);
+print("la nota 2 es.......................:",Not2);
+print("la nota 3 es.......................:",Not3);
+print("el promedio es.....................:",Promm);
+print("la situacion final del alumno es...:",Situacion)
+print("");
+print("");
