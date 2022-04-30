@@ -1,0 +1,56 @@
+# ejercicio n°3
+# determinar si la persona es hombre o mujer
+# debe utilizar la intruccion if
+# H = Rut, Nombre, SueldoBase, Bono, Anticipo y SueldoLiquido
+# M = Rut, Nombre, Direccion y edad 
+from os import system
+system("cls");
+
+print("");
+Persona = input("ingrese genero de la persona    : ");
+print("");
+
+if(Persona == "HOMBRE" or Persona == "hombre" or Persona == "Hombre"):
+    
+    print("la persona ingresada es   :", Persona);
+    Rutt = input("ingrese rut................................: ");
+    Nomm = input("ingrese nombre.............................: ");
+    SBase = int(input("ingrese Sueldo Base........................: "));
+    Bono = int(input("ingrese Bono.............................: "));
+    Anti = int(input("ingrese Anticipo.............................: "));
+    # ud debe calcular el sueldo: liquido (SBase + Bono) - (Anti)
+    SLiqui = (SBase+Bono)-(Anti);
+
+    print("");
+    print(" ... MUESTRA DE DATOS ...");
+    print("=========================");
+    print("La persona ingresada es                     :", Persona); 
+    print("El Rut ingresada es                         :", Rutt);
+    print("El Nombre ingresada es                      :", Nomm);
+    print("El Sueldo Base ingresada es                 :", SBase);
+    print("El Bono ingresada es                        :", Bono);
+    print("El Anticipo ingresada es                    :", Anti); 
+    print("El Sueldo Liquido ingresada es              :", SLiqui);
+    print("=============================================");
+    print("");
+ 
+if (Persona == "MUJER" or Persona == "mujer" or Persona == "Mujer"):
+    print ("La persona ingresada es    :",Persona);
+    Rutt = input("ingrese rut................................: ");
+    Nomm = input("ingrese nombre.............................: ");
+    Dirr = input("ingrese direccion..........................: ");
+    Edad = input("ingrese edad...............................: ");
+    print("");
+    print(" ... MUESTRA DE DATOS ...");
+    print("=========================");
+    print("La persona ingresada es                     :", Persona); 
+    print("El Rut ingresada es                         :", Rutt);
+    print("El Nombre ingresada es                      :", Nomm);
+    print("La Direccion ingresada es                   :", Dirr);
+    print("La Edad ingresada es                        :", Edad);
+    print("=============================================");
+    print("");  
+
+if(Persona != "HOMBRE" or Persona !="hombre" or Persona != "Hombre" or Persona != "MUJER" or Persona !="mujer" or Persona != "Mujer" ):
+    print("..ERROR, ese tipo de persona no existe... !!!!");
+    print("");
